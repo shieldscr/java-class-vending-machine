@@ -15,8 +15,8 @@ public class VendingMachine_WhenMultipleValidCoinsInserted_Test {
     public void setup() {
         machine = new VendingMachine();
         machine.setCoinTranslator(new MockCoinTranslator());
-        machine.insertCoin("COIN");
-        machine.insertCoin("COIN");
+        machine.insertCoin(MockCoinTranslator.GOOD_COIN);
+        machine.insertCoin(MockCoinTranslator.GOOD_COIN);
     }
 
     @Test

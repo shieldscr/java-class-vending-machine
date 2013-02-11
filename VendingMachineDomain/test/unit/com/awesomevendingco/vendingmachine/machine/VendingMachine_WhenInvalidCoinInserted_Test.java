@@ -18,12 +18,12 @@ public class VendingMachine_WhenInvalidCoinInserted_Test {
         machine = new VendingMachine();
         machine.setCoinTranslator(new MockCoinTranslator());
         previousBlanace = machine.getBalance();
-        machine.insertCoin("BAD_COIN");
+        machine.insertCoin(MockCoinTranslator.BAD_COIN);
     }
 
     @Test
     public void it_puts_coin_in_coin_return() {
-        assertTrue(machine.getCoinReturn().contains("BAD_COIN"));
+        assertTrue(machine.getCoinReturn().contains(MockCoinTranslator.BAD_COIN));
     }
 
     @Test
@@ -38,7 +38,7 @@ public class VendingMachine_WhenInvalidCoinInserted_Test {
 
     @Test
     public void it_displays_message_of_insert_coin_when_valid_coin_inserted() {
-        machine.insertCoin("COIN");
+        machine.insertCoin(MockCoinTranslator.GOOD_COIN);
         assertEquals("INSERT COIN", machine.getMessage());
     }
 
