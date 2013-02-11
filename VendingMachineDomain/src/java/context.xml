@@ -7,6 +7,7 @@
 
 	<bean id="machine" class="com.awesomevendingco.vendingmachine.machine.VendingMachine">
 		<property name="coinTranslator" ref="coins" />
+		<property name="productValuator" ref="products" />
 	</bean>
 		
 	<bean id="coins" class="com.awesomevendingco.vendingmachine.coins.CoinTranslatorImpl">
@@ -15,6 +16,16 @@
 				<entry key="NICKEL" value="0.05" />
 				<entry key="DIME" value="0.10" />
 				<entry key="QUARTER" value="0.25" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="products" class="com.awesomevendingco.vendingmachine.products.ProductValuatorImpl">
+		<property name="productPrices">
+			<map>
+				<entry key="COLA" value="1.00" />
+				<entry key="CHIPS" value="0.50" />
+				<entry key="CANDY" value="0.65" />
 			</map>
 		</property>
 	</bean>

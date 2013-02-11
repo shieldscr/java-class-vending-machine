@@ -20,14 +20,14 @@ public class CoinTranslatorTest {
 
     private Map<String, Double> coinValue() {
         Map<String, Double> coinValues = new HashMap<String, Double>();
-        coinValues.put(MockCoinTranslator.GOOD_COIN, 0.45);
+        coinValues.put(MockCoinTranslator.GOOD_COIN, MockCoinTranslator.GOOD_COIN_VALUE);
         return coinValues;
     }
 
     @Test
     public void it_returns_value_of_coin() {
         double value = translator.valuateCoin(MockCoinTranslator.GOOD_COIN);
-        assertEquals(0.45, value, 0.001);
+        assertEquals(MockCoinTranslator.GOOD_COIN_VALUE, value, 0.001);
     }
 
     @Test(expected = InvalidCoinException.class)
