@@ -1,7 +1,7 @@
-package com.awesomevendingco.vendingmachine;
+package com.awesomevendingco.vendingmachine.coins;
 
-import com.awesomevendingco.vendingmachine.CoinTranslator;
-import com.awesomevendingco.vendingmachine.InvalidCoinException;
+import com.awesomevendingco.vendingmachine.coins.CoinTranslator;
+import com.awesomevendingco.vendingmachine.coins.InvalidCoinException;
 
 public class MockCoinTranslator implements CoinTranslator {
 

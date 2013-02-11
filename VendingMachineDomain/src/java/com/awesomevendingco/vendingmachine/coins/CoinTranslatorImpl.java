@@ -1,4 +1,4 @@
-package com.awesomevendingco.vendingmachine;
+package com.awesomevendingco.vendingmachine.coins;
 
 import java.util.Map;
 

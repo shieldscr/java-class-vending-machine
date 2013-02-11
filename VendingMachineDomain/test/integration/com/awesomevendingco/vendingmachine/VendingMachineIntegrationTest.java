@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.awesomevendingco.vendingmachine.VendingMachine;
+import com.awesomevendingco.vendingmachine.machine.VendingMachine;
 
 public class VendingMachineIntegrationTest {
 
@@ -23,25 +23,25 @@ public class VendingMachineIntegrationTest {
     @Test
     public void itTakesQuarters() {
         machine.insertCoin("QUARTER");
-        assertEquals("0.25", machine.getDisplay());
+        assertEquals("0.25", machine.getBalance());
     }
 
     @Test
     public void itTakesNickels() {
         machine.insertCoin("NICKEL");
-        assertEquals("0.05", machine.getDisplay());
+        assertEquals("0.05", machine.getBalance());
     }
 
     @Test
     public void itTakesDimes() {
         machine.insertCoin("DIME");
-        assertEquals("0.10", machine.getDisplay());
+        assertEquals("0.10", machine.getBalance());
     }
 
     @Test
     public void itDoesNotTakeLoonies() {
         machine.insertCoin("LOONIE");
-        assertEquals("0.00", machine.getDisplay());
+        assertEquals("0.00", machine.getBalance());
     }
 
     @Test
@@ -49,7 +49,7 @@ public class VendingMachineIntegrationTest {
         machine.insertCoin("NICKEL");
         machine.insertCoin("DIME");
         machine.insertCoin("QUARTER");
-        assertEquals("0.40", machine.getDisplay());
+        assertEquals("0.40", machine.getBalance());
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.awesomevendingco.vendingmachine;
+package com.awesomevendingco.vendingmachine.coins;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,21 +8,20 @@ import java.util.Map;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.awesomevendingco.vendingmachine.CoinTranslatorImpl;
-import com.awesomevendingco.vendingmachine.InvalidCoinException;
-
 public class CoinTranslatorTest {
 
     private CoinTranslatorImpl translator;
 
     @Before
     public void setup() {
+        translator = new CoinTranslatorImpl();
+        translator.setCoinValues(coinValue());
+    }
 
+    private Map<String, Double> coinValue() {
         Map<String, Double> coinValues = new HashMap<String, Double>();
         coinValues.put("COIN", 0.45);
-
-        translator = new CoinTranslatorImpl();
-        translator.setCoinValues(coinValues);
+        return coinValues;
     }
 
     @Test
