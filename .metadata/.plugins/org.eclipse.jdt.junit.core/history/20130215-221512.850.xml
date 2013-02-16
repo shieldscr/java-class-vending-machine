@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="unit" project="VendingMachineWeb" tests="20" started="20" failures="0" errors="0" ignored="0">
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenInvalidCoinInserted_Test" time="0.002">
+    <testcase name="it_puts_coin_in_coin_return" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenInvalidCoinInserted_Test" time="0.001"/>
+    <testcase name="it_displays_message_of_invalid_coin" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenInvalidCoinInserted_Test" time="0.0"/>
+    <testcase name="it_does_not_change_balance" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenInvalidCoinInserted_Test" time="0.0"/>
+    <testcase name="it_displays_message_of_insert_coin_when_valid_coin_inserted" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenInvalidCoinInserted_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.coins.CoinTranslatorTest" time="0.0">
+    <testcase name="it_returns_value_of_coin" classname="com.awesomevendingco.vendingmachine.coins.CoinTranslatorTest" time="0.0"/>
+    <testcase name="it_throws_invalid_coin_exception_when_coin_is_invalid" classname="com.awesomevendingco.vendingmachine.coins.CoinTranslatorTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenMultipleValidCoinsInserted_Test" time="0.0">
+    <testcase name="it_displays_balance_of_inserted_coins" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenMultipleValidCoinsInserted_Test" time="0.0"/>
+    <testcase name="it_displays_message_of_insert_coin" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenMultipleValidCoinsInserted_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingInvalidProduct_Test" time="0.0">
+    <testcase name="it_displays_message_of_invalid_product" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingInvalidProduct_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithEnoughMoney_Test" time="0.001">
+    <testcase name="it_puts_product_in_product_chute" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithEnoughMoney_Test" time="0.001"/>
+    <testcase name="it_displays_message_of_thank_you" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithEnoughMoney_Test" time="0.0"/>
+    <testcase name="it_displays_balance_of_zero" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithEnoughMoney_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.products.ProductValuatorTest" time="0.0">
+    <testcase name="it_returns_price_of_product" classname="com.awesomevendingco.vendingmachine.products.ProductValuatorTest" time="0.0"/>
+    <testcase name="it_throws_invalid_product_exception_when_product_is_invalid" classname="com.awesomevendingco.vendingmachine.products.ProductValuatorTest" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithoutEnoughMoney_Test" time="0.001">
+    <testcase name="it_doesn_not_put_product_in_product_chute" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithoutEnoughMoney_Test" time="0.0"/>
+    <testcase name="it_displays_message_stating_price_of_product" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenSelectingProductWithoutEnoughMoney_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenValidCoinInserted_Test" time="0.0">
+    <testcase name="it_displays_message_of_insert_coin" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenValidCoinInserted_Test" time="0.0"/>
+    <testcase name="it_displays_balance_of_inserted_coin" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenValidCoinInserted_Test" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenNoCoinsInserted_Test" time="0.0">
+    <testcase name="it_displays_message_of_insert_coin" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenNoCoinsInserted_Test" time="0.0"/>
+    <testcase name="it_displays_balance_of_zero" classname="com.awesomevendingco.vendingmachine.machine.VendingMachine_WhenNoCoinsInserted_Test" time="0.0"/>
+  </testsuite>
+</testrun>

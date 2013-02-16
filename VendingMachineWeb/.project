@@ -3,7 +3,6 @@
 	<name>VendingMachineWeb</name>
 	<comment></comment>
 	<projects>
-		<project>VendingMachineDomain</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

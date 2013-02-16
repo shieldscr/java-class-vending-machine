@@ -1,7 +1,5 @@
-INDEX VERSION 1.122+/Users/groyse/Code/VendingMachine/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-984187226.index
-3110205755.index
-2677338581.index
+INDEX VERSION 1.122+/Users/groyse/Code/VendingMachine2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4293544457.index
 2020274875.index
-3555641046.index
-3787151750.index
+1229816975.index
+2748265909.index
