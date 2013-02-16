@@ -13,6 +13,15 @@
 <h1>Message: <c:out value="${machine.message}" /></h1>
 <h1>Balance: <c:out value="${machine.balance}" /></h1>
 
+<div>
+<form name="vmform" method="post" action="insertcoin">
+<label>Coin Slot</label>
+<input name="insertcoin" type="text" value="type in a coin">
+<input type="submit" value="insert thine coin">
+</form>
+</div>
+
+
 </body>
 
 </html>

@@ -7,10 +7,20 @@
     <servlet-name>BootMachine</servlet-name>
     <servlet-class>com.awesomevendingco.vendingmachine.ui.BootMachineServlet</servlet-class>
   </servlet>
-
+  
   <servlet-mapping>
     <servlet-name>BootMachine</servlet-name>
     <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertCoinServlet</servlet-name>
+    <servlet-class>com.awesomevendingco.vendingmachine.ui.InsertCoinServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>InsertCoinServlet</servlet-name>
+    <url-pattern>/insertcoin</url-pattern>
   </servlet-mapping>
 
 </web-app>
