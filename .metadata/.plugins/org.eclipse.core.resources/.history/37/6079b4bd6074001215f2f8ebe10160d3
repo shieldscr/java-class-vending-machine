@@ -1,0 +1,30 @@
+package com.awesomevendingco.vendingmachine;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class VendingMachine_WhenInvalidCoinInserted_Test {
+
+    private VendingMachine machine;
+
+    @Before
+    public void setup() {
+        machine = new VendingMachine();
+        machine.setCoinTranslator(new MockCoinTranslator());
+        machine.insertCoin("BAD_COIN");
+    }
+
+    @Test
+    public void it_puts_coin_in_coin_return() {
+        assertTrue(machine.getCoinReturn().contains("BAD_COIN"));
+    }
+
+    @Test
+    public void it_displays_message_of_invalid_coin() {
+        assertEquals("INVALID COIN", machine.getMessage());
+    }
+
+}

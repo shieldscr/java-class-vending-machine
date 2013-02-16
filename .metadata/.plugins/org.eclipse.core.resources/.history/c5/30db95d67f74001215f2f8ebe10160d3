@@ -1,0 +1,26 @@
+package com.awesomevendingco.vendingmachine.machine;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.awesomevendingco.vendingmachine.coins.MockCoinTranslator;
+
+public class VendingMachine_ProductSelection_WhenEnoughMoneyIsInMachine_Test {
+
+    private VendingMachine machine;
+
+    @Before
+    public void setup() {
+        machine = new VendingMachine();
+        machine.setCoinTranslator(new MockCoinTranslator());
+        machine.setProductValuator(new MockProductValuator());
+    }
+
+    @Test
+    public void it_puts_coin_in_coin_return() {
+    }
+
+}

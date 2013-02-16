@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<html>
+
+<head>
+	<title>Hello, World</title>
+</head>
+
+<body>
+
+<c:set var="name" value="${request.getParameter('visitCount'}" />
+
+<h1>You have visited <c:out value="${visitCount}" /></h1>
+
+</body>
+
+</html>

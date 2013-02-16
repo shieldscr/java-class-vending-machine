@@ -1,0 +1,9 @@
+package com.awesomevendingco.vendingmachine.ui;
+
+public class Person {
+
+    private String name;
+    private int age;
+    private String favoriteColor;
+
+}

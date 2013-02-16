@@ -1,0 +1,14 @@
+package com.awesomevendingco.vendingmachine.products;
+
+import java.util.Map;
+
+public class ProductValuatorImpl implements ProductValuator {
+
+    public void setProductValues(Map<String, Double> productValues) {
+    }
+    
+    public double lookupProduct(String product) {
+        return 0;
+    }
+
+}

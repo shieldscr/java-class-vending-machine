@@ -1,0 +1,48 @@
+1360593601411	Delete element
+1360593644661	Rename resource 'american_context.xml'
+1360593648288	Delete element
+1360593653843	Delete element
+1360593714562	Delete element
+1360593776690	Rename package 'com.awesomevending.vendingmachine'
+1360593787988	Rename package 'com.awesomevending.vendingmachine'
+1360593799784	Rename package 'com.awesomevending.vendingmachine'
+1360593823267	Rename type 'AmericanVendingMachineTest'
+1360595525494	Delete element
+1360596452492	Copy compilation unit
+1360596495178	Copy compilation unit
+1360596534338	Rename type 'CopyOfVendingMachineTest'
+1360596651277	Copy compilation unit
+1360596661199	Rename type 'VendingMachine_WhenMultipleValidCoinsInserted'
+1360596778143	Rename type 'VendingMachineTest'
+1360597097343	Extract local variable 'string'
+1360597108536	Convert local variable 'message' to field
+1360597314630	Rename method 'getDisplay'
+1360597389633	Move compilation units
+1360597396842	Move compilation unit
+1360597405914	Move compilation unit
+1360597434128	Move compilation units
+1360597441734	Move compilation units
+1360597755144	Extract method 'extracted'
+1360597765493	Inline local variable 'coinValues'
+1360598000968	Extract constant 'COIN'
+1360598024126	Extract constant 'BAD_COIN'
+1360598086023	Extract Class...
+1360598116682	Delete element
+1360607276606	Extract constant '_0_45'
+1360607303464	Rename field 'COIN_VALUE'
+1360609666465	Extract method 'extracted'
+1360610076297	Extract method 'extracted'
+1360610261522	Copy compilation unit
+1360610663931	Rename type 'VendingMachine_ProductSelection_WhenEnoughMoneyIsInMachine_Test'
+1360611190182	Copy compilation unit
+1360611200311	Rename type 'VendingMachine_SelectingProductWithEnoughMoney_Test'
+1360612137047	Copy compilation unit
+1360612573208	Extract method 'extracted'
+1360612591808	Extract method 'extracted'
+1360613443661	Extract method 'extracted'
+1360613452491	Extract method 'extracted'
+1360613588568	Extract method 'extracted'
+1360613600453	Extract method 'extracted'
+1360613669193	Rename package 'com.awesomevendingco.vendingmachine.machine.products'
+1360613685522	Rename package 'com.awesomevendingco.vendingmachine.machine.products'
+1360614311187	Rename method 'setProductValues'

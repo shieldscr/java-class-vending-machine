@@ -1,0 +1,8 @@
+package com.awesomevendingco.vendingmachine.coins;
+
+public class MockCoinTranslatorData {
+    public CoinTranslatorImpl translator;
+
+    public MockCoinTranslatorData() {
+    }
+}

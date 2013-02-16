@@ -1,0 +1,9 @@
+package com.awesomevendingco.vendingmachine.products;
+
+public class ProductValuatorImpl implements ProductValuator {
+
+    public double lookupProduct(String product) {
+        return 0;
+    }
+
+}

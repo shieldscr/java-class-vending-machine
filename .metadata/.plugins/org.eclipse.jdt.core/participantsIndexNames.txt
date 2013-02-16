@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+/Users/groyse/Code/VendingMachine/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3555641046.index
+/VendingMachineWeb/src/java

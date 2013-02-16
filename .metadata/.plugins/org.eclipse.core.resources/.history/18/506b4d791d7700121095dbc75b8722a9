@@ -1,0 +1,44 @@
+package com.awesomevendingco.vendingmachine.ui;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.awesomevendingco.vendingmachine.machine.VendingMachine;
+
+public class BootMachineServlet extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        VendingMachine machine = (VendingMachine) context.getBean("machine");
+
+        request.getSession().setAttribute("machine", machine);
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/machine.jsp");
+        dispatcher.forward(request, response);
+
+    }
+
+    private void setApplicationScope(ServletContext context, String attribute, Object value) {
+        context.setAttribute(attribute, value);
+    }
+
+    private void setSessionScope(HttpSession session, String attribute, Object value) {
+        session.setAttribute(attribute, value);
+    }
+    
+    private void setRequestScope(ServletRequest request, String attribute, Object value) {
+        
+    }
+}

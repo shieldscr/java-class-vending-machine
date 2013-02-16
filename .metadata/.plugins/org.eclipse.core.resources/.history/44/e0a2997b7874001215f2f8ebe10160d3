@@ -1,0 +1,16 @@
+package com.awesomevendingco.vendingmachine.coins;
+
+
+public class MockCoinTranslator implements CoinTranslator {
+
+    private static final String COIN2 = "COIN";
+    public static final String BAD_COIN = "BAD_COIN";
+    public static final String GOOD_COIN = COIN2;
+
+    public double valuateCoin(String coin) {
+        if (coin.equals(COIN2))
+            return 0.45;
+        throw new InvalidCoinException();
+    }
+
+}

@@ -1,0 +1,11 @@
+package com.awesomevendingco.vendingmachine.products;
+
+public class ProductValuatorImpl implements ProductValuator {
+
+    @Override
+    public double lookupProduct(String product) {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+}

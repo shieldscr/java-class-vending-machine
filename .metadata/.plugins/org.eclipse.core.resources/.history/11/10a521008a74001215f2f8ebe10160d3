@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="machine" class="com.awesomevendingco.vendingmachine.machine.VendingMachine">
+		<property name="coinTranslator" ref="coins" />
+		<property name="productValuator" ref="products" />
+	</bean>
+		
+	<bean id="coins" class="com.awesomevendingco.vendingmachine.coins.CoinTranslatorImpl">
+		<property name="coinValues">
+			<map>
+				<entry key="NICKEL" value="0.05" />
+				<entry key="DIME" value="0.10" />
+				<entry key="QUARTER" value="0.25" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="products" class="com.awesomevendingco.vendingmachine.coins.CoinTranslatorImpl">
+		<property name="productPrices">
+			<map>
+				<entry key="NICKEL" value="0.05" />
+				<entry key="DIME" value="0.10" />
+				<entry key="QUARTER" value="0.25" />
+			</map>
+		</property>
+	</bean>
+
+</beans>

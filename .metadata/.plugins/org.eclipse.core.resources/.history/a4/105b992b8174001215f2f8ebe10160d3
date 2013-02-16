@@ -1,0 +1,7 @@
+package com.awesomevendingco.vendingmachine.machine.products;
+
+public class MockProductValuator implements ProductValuator {
+
+    public static final String GOOD_PRODUCT = "GOOD_PRODUCT";
+    
+}
