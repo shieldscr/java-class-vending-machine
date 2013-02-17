@@ -1,14 +1,6 @@
-1360885513849	Delete element
-1360891111722	Delete element
-1360896469490	Delete element
-1360896802135	Delete element
-1360896890311	Delete elements
-1360898149913	Extract method 'extracted'
-1360898177569	Extract local variable 'string'
-1360898518590	Delete element
-1360898522486	Delete element
-1360898525102	Delete element
-1360899124224	Delete element
-1360984124095	Delete elements
-1360984320979	Move 'commons-logging-1.1.1.jar' to 'lib'
-1360984461028	Delete element
+1361053323604	Rename resource 'vendingmachine.html'
+1361054279696	Rename resource 'machine.jsp'
+1361054287298	Copy file
+1361054294622	Move 1 resources to 'WebContent'
+1361054302884	Copy file
+1361054370648	Copy file

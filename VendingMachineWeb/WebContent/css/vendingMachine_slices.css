@@ -1,0 +1,47 @@
+* {
+	font-family: 'PT Mono', sans-serif;
+}
+#display {
+	color: white;
+	position: absolute;
+	width: 112px;
+	height: 57px;
+	z-index: 1;
+	padd left: 41px;
+	top: 229px;
+	text-align: center;
+	border: 0px solid;
+	outline: none;
+	left: 751px;
+}
+
+#coinslot {
+	color: white;
+	position: absolute;
+	width: 130px;
+	height: 23px;
+	z-index: 1;
+	left: 2px;
+	top: 157px;
+	text-align: center;
+	border: 0px solid;
+	outline: none;
+	left: 743px;
+}
+
+#coininsert {
+	color: white;
+	position: absolute;
+	width: 197px;
+	height: 23px;
+	z-index: 1;
+	top: 57px;
+	text-align: left;
+	border: 0px solid;
+	outline: none;
+	left: 81px;
+}
+
+input {
+	outline: inset;
+}

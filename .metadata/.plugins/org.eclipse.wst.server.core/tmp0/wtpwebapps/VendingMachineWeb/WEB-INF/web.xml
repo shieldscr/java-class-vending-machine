@@ -10,7 +10,7 @@
   
   <servlet-mapping>
     <servlet-name>BootMachine</servlet-name>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/bootmachine</url-pattern>
   </servlet-mapping>
   
   <servlet>
