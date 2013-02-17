@@ -13,7 +13,9 @@ import com.awesomevendingco.vendingmachine.machine.VendingMachine;
 
 public class BootMachineServlet extends HelpfulServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	private static final long serialVersionUID = -4913081238525533316L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         VendingMachine machine = (VendingMachine) context.getBean("machine");

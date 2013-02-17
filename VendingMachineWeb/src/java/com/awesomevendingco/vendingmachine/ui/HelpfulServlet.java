@@ -12,7 +12,9 @@ import javax.servlet.http.HttpSession;
 
 public abstract class HelpfulServlet extends HttpServlet {
 
-    protected void forwardToPage(HttpServletRequest request, HttpServletResponse response, String page) throws ServletException, IOException {
+	private static final long serialVersionUID = 5082625629247683759L;
+
+	protected void forwardToPage(HttpServletRequest request, HttpServletResponse response, String page) throws ServletException, IOException {
         getServletContext().getRequestDispatcher(page).forward(request, response);
     }
 
