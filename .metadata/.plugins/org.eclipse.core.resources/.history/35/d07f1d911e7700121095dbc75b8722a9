@@ -1,7 +1,0 @@
-package com.awesomevendingco.vendingmachine.ui;
-
-import javax.servlet.http.HttpServlet;
-
-public class HelpfulServlet extends HttpServlet {
-
-}

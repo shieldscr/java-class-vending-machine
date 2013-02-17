@@ -1,5 +1,0 @@
-package com.awesomevendingco.vendingmachine.machine.products;
-
-public class MockProductValuator implements ProductValuator {
-
-}

@@ -1,4 +1,0 @@
-package com.awesomevendingco.vendingmachine.machine.products;
-
-public interface ProductValuator {
-}
