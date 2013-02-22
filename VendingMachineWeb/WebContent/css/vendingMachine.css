@@ -141,6 +141,10 @@ h1 {
 	background: linear-gradient(180deg, rgb(49, 49, 49) 13%, rgb(183, 183, 183) 81% );
 }
 
+.product a:link {
+	text-decoration: none;
+}
+
 .product:hover {
 	background: rgb(139, 28, 37);
 	background: -moz-linear-gradient(90deg, rgb(139, 28, 37) 13%, rgb(238, 58, 67) 81% );

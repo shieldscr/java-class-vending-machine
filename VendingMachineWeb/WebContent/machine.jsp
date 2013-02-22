@@ -13,9 +13,10 @@
 			<div id="functions" class="clearfix">
 				<div id="products">
 					<div class="product" id="chips"><a href="product?product=CHIPS">Chips</a></div>
-					<div class="product" coinid="candy"><a href="product?product=CANDY">Candy</a></div>
+					<div class="product" id="candy"><a href="product?product=CANDY">Candy</a></div>
 					<div class="product" id="cola"><a href="product?product=COLA">Cola</a></div>
 					<div id="productBin"><c:out value="${machine.getProductChute()}" /></div>
+				</div>
 				<div id="payment">
 					<div id="display">
 						<div id="line1"><c:out value="${machine.message}" /></div>
@@ -27,7 +28,7 @@
 						</form>
 						<div id="returnCoin">Return</div>
 					</div>
-					<div id="return"></div>
+					<div id="return"><c:out value="${machine.getCoinReturn()}" /></div>
 				</div>
 			</div>	
 		</div>
