@@ -23,4 +23,14 @@
     <url-pattern>/insertcoin</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.awesomevendingco.vendingmachine.ui.ProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/product</url-pattern>
+  </servlet-mapping>
+
 </web-app>
